@@ -1,0 +1,14 @@
+[
+    {
+        "plugin_name": "StaticAnalysis",
+        "severity": "High",
+        "details": "SQL Injection",
+        "timestamp": "2024-05-22T23:32:24.122657"
+    },
+    {
+        "plugin_name": "DependencyCheck",
+        "severity": "Medium",
+        "details": "Outdated Library",
+        "timestamp": "2024-05-22T23:32:24.122950"
+    }
+]

@@ -1,0 +1,12 @@
+{
+  "StaticAnalysisPlugin": {
+    "class_name": "StaticAnalysisPlugin",
+    "version": 1.0,
+    "enabled": true
+  },
+  "DependencyCheckPlugin": {
+    "class_name": "DependencyCheckPlugin",
+    "version": 1.0,
+    "enabled": true
+  }
+}
