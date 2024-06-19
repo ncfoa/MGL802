@@ -23,7 +23,10 @@ def run_security_tests(kernel):
         "changed_files": ["file1.py", "file2.py"],
         "diff": "diff details here"
     }
-    kernel.initiate_testing(code_change)
+    vulnerabilities = kernel.initiate_testing(code_change)
+    if vulnerabilities:
+        print("Security vulnerabilities detected. Push aborted.")
+        sys.exit(1)
 
 
 def main():

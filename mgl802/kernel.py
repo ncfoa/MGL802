@@ -32,7 +32,7 @@ class Kernel:
             aggregated_results[result['severity']].append(result)
         self.report_results(aggregated_results)
 
-    def report_results(self):
+    def report_results(self, aggregated_results):
         dashboard = ResultsDashboard(self.result_repository)
         dashboard.display()
         notifier = NotificationSystem(self.result_repository)
