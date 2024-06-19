@@ -14,7 +14,7 @@ class Kernel:
             result = plugin.run_test(code_change)
             self.results.append(result)
             self.store_result(result)
-        self.aggregate_results()
+        self.aggregate_results() 
 
     def store_result(self, result):
         result_obj = Result(
@@ -32,7 +32,7 @@ class Kernel:
             aggregated_results[result['severity']].append(result)
         self.report_results(aggregated_results)
 
-    def report_results(self, aggregated_results):
+    def report_results(self):
         dashboard = ResultsDashboard(self.result_repository)
         dashboard.display()
         notifier = NotificationSystem(self.result_repository)

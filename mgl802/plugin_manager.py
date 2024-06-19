@@ -94,31 +94,3 @@ class PluginManager:
             self.save_plugin_metadata()
             print(f"Disabled plugin: {plugin_name}")
 
-# Example usage:
-# if __name__ == '__main__':
-#     manager = PluginManager()
-
-#     # Register example plugins
-#     manager.register_plugin('StaticAnalysisPlugin', 'StaticAnalysisPlugin', 1.0)
-#     manager.register_plugin('DependencyCheckPlugin', 'DependencyCheckPlugin', 1.0)
-
-#     # Load plugins
-#     plugins = manager.load_plugins()
-#     print(f"Loaded plugins: {plugins}")
-
-#     # Update plugins
-#     manager.update_plugins()
-
-#     # Enable/disable plugins
-#     manager.enable_plugin('StaticAnalysisPlugin')
-#     manager.disable_plugin('DependencyCheckPlugin')
-
-#     # Unregister a plugin
-#     manager.unregister_plugin('DependencyCheckPlugin')
-
-#     # Run tests using loaded plugins
-#     code_change = {"code": "new code changes"}
-#     for plugin in plugins:
-#         result = plugin.run_test(code_change)
-#         print(f"Test result from {plugin}: {result}")
-
